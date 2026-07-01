@@ -22,6 +22,9 @@ pipeline {
         docker { image 'mysql:latest' }
       }
       steps {
-        sh 'SELECT * FROM XYZ'
+        sh 'echo "Running database stage"'
+      }
+    }
   }
 }
+    
